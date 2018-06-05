@@ -1,0 +1,22 @@
+﻿# encoding: utf-8
+# Release 16.1
+SetScriptVersion(Version="16.1.91")
+system1 = GetSystem(Name="SYS")
+engineeringDataComponent1 = system1.GetComponent(Name="Engineering Data")
+system2 = system1.Duplicate(
+    ComponentsToShare=[engineeringDataComponent1],
+    RelativeTo=system1)
+engineeringDataComponent2 = system2.GetComponent(Name="Engineering Data")
+system3 = system2.Duplicate(
+    ComponentsToShare=[engineeringDataComponent2],
+    RelativeTo=system2)
+modelComponent1 = system2.GetComponent(Name="Model")
+modelComponent1.Reset()
+modelComponent2 = system3.GetComponent(Name="Model")
+modelComponent2.Reset()
+modelComponent1.Refresh()
+model1 = system2.GetContainer(ComponentName="Model")
+model1.Edit()
+model2 = system1.GetContainer(ComponentName="Model")
+model2.Edit()
+Save(Overwrite=True)

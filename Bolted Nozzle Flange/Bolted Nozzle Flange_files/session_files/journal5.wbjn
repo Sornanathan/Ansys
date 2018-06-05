@@ -1,0 +1,34 @@
+﻿# encoding: utf-8
+# Release 16.1
+SetScriptVersion(Version="16.1.91")
+favorites1 = EngData.LoadFavoriteItems()
+library1 = EngData.OpenLibrary(
+    Name="General Materials",
+    Source="General_Materials.xml")
+system1 = GetSystem(Name="SYS")
+engineeringData1 = system1.GetContainer(ComponentName="Engineering Data")
+matl1 = engineeringData1.ImportMaterial(
+    Name="Structural Steel",
+    Source="General_Materials.xml")
+EngData.EnableFilter(Enable=False)
+Save(Overwrite=True)
+modelComponent1 = system1.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+Save(Overwrite=True)
+Save(Overwrite=True)
+model1.Exit()
+material1 = engineeringData1.GetMaterial(Name="A-286 Steel")
+material1.Delete()
+material2 = engineeringData1.GetMaterial(Name="300 Series Stainless Steel")
+material2.Delete()
+Save(Overwrite=True)
+modelComponent1.Refresh()
+model1.Edit()
+Save(Overwrite=True)
+model1.Exit()
+system1.DisplayText = "Bolted Nozzle Flange"
+Save(Overwrite=True)
+system1.DisplayText = "Flange"
+Save(Overwrite=True)

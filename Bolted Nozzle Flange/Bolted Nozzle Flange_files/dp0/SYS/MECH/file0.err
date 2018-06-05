@@ -1,0 +1,28 @@
+/COM,ANSYS RELEASE Release 18.2      BUILD 18.2      UP20170726       19:02:56
+
+ *** WARNING ***                         CP =       0.828   TIME= 19:02:58
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** WARNING ***                         CP =       0.891   TIME= 19:02:58
+ Material number 19 (used by element 4776 ) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       2.953   TIME= 19:02:59
+ Coefficient ratio exceeds 1.0e8 - Check results.                        
+
+ *** WARNING ***                         CP =      14.172   TIME= 19:03:12
+ Table _FIX is an ANSYS reserved table name.  It is used to constrain    
+ structural degrees of freedom to their current displaced status.  This  
+ table should not be used for other purposes.                            
+
+ *** WARNING ***                         CP =      14.188   TIME= 19:03:12
+ Material number 19 (used by element 4776 ) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =      27.828   TIME= 19:03:30
+ Material number 19 (used by element 4776 ) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                

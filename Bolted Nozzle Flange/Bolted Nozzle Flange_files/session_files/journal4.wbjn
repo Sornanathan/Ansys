@@ -1,0 +1,15 @@
+﻿# encoding: utf-8
+# Release 16.1
+SetScriptVersion(Version="16.1.91")
+system1 = GetSystem(Name="SYS 1")
+system1.Delete()
+system2 = GetSystem(Name="SYS 2")
+model1 = system2.GetContainer(ComponentName="Model")
+model1.Edit()
+system3 = GetSystem(Name="SYS")
+model2 = system3.GetContainer(ComponentName="Model")
+model2.Edit()
+Save(Overwrite=True)
+model1.Exit()
+system2.Delete()
+Save(Overwrite=True)

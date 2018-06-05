@@ -1,0 +1,138 @@
+﻿# encoding: utf-8
+# Release 18.2
+SetScriptVersion(Version="18.2.109")
+system1 = GetSystem(Name="SYS")
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.Edit()
+geometry1.Exit()
+geometry1.Edit()
+geometry1.Exit()
+Save(Overwrite=True)
+Save(Overwrite=True)
+template1 = GetTemplate(TemplateName="Geometry")
+system2 = template1.CreateSystem(
+    Position="Right",
+    RelativeTo=system1)
+geometryComponent1 = system2.GetComponent(Name="Geometry")
+geometryComponent2 = system1.GetComponent(Name="Geometry")
+geometryComponent1.ReplaceWithShare(
+    TargetSystem=system2,
+    ComponentToShare=geometryComponent2,
+    SourceSystem=system1)
+geometryComponent1.DeleteShare(System=system2)
+geometry2 = system2.GetContainer(ComponentName="Geometry")
+geometry2.Edit()
+system3 = template1.CreateSystem(
+    Position="Right",
+    RelativeTo=system2)
+geometry3 = system3.GetContainer(ComponentName="Geometry")
+geometry3.Edit(IsSpaceClaimGeometry=True)
+geometry3.Exit()
+geometry3.Edit(IsSpaceClaimGeometry=True)
+geometry3.Exit()
+geometry3.Edit()
+geometry3.Exit()
+geometry2.Exit()
+system3.Delete()
+geometry2.Edit()
+modelComponent1 = system1.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+Save(Overwrite=True)
+Save(Overwrite=True)
+engineeringData1 = system1.GetContainer(ComponentName="Engineering Data")
+matl1 = engineeringData1.CreateMaterial(Name="300")
+matl1.DisplayName = "300 Series Stainless Steel"
+matlProp1 = matl1.CreateProperty(
+    Name="Elasticity",
+    Behavior="Isotropic",
+    Qualifiers={"Definition": "", "Behavior": "Isotropic"})
+unitSystem1 = SetProjectUnitSystem(UnitSystemName="BIN_STANDARD")
+matlProp1.SetData(
+    Index=-1,
+    Variables=["Young's Modulus"],
+    Values=[["29000000 [psi]"]])
+matlProp1.SetData(
+    Variables=["Poisson's Ratio"],
+    Values=[["0.27"]])
+matlProp2 = matl1.CreateProperty(
+    Name="Coefficient of Thermal Expansion",
+    Definition="Secant",
+    Behavior="Isotropic",
+    Qualifiers={"Definition": "Secant", "Behavior": "Isotropic"})
+matlProp2.SetData(
+    SheetName="Coefficient of Thermal Expansion",
+    SheetQualifiers={"Definition": "Secant", "Behavior": "Isotropic"},
+    Index=-1,
+    Variables=["Coefficient of Thermal Expansion"],
+    Values=[["1E-05 [F^-1]"]])
+matl2 = matl1.Duplicate(TargetContainer=engineeringData1)
+matl2.DisplayName = "A - 286 Steel"
+material1 = engineeringData1.GetMaterial(Name="Structural Steel")
+matlProp3 = material1.GetProperty(Name="Coefficient of Thermal Expansion")
+matlProp3.SetData(
+    SheetName="Coefficient of Thermal Expansion",
+    SheetQualifiers={"Definition": "Secant", "Behavior": "Isotropic"},
+    Variables=["Coefficient of Thermal Expansion"],
+    Values=[["9.5E-06 [C^-1]"]])
+matlProp4 = material1.GetProperty(Name="Elasticity")
+matlProp4.SetData(
+    Variables=["Poisson's Ratio"],
+    Values=[["0.31"]])
+matlProp5 = matl2.GetProperty(Name="Coefficient of Thermal Expansion")
+matlProp5.SetData(
+    SheetName="Coefficient of Thermal Expansion",
+    SheetQualifiers={"Definition": "Secant", "Behavior": "Isotropic"},
+    Variables=["Coefficient of Thermal Expansion"],
+    Values=[["9.5E-06 [F^-1]"]])
+matlProp6 = matl2.GetProperty(Name="Elasticity")
+matlProp6.SetData(
+    Variables=["Poisson's Ratio"],
+    Values=[["0.31"]])
+matl3 = engineeringData1.CreateMaterial(Name="a")
+matlProp7 = matl3.CreateProperty(
+    Name="Coefficient of Thermal Expansion",
+    Definition="Instantaneous",
+    Behavior="Isotropic",
+    Qualifiers={"Definition": "Instantaneous", "Behavior": "Isotropic"})
+matl3.Delete()
+modelComponent1.Refresh()
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+model1.Exit()
+results1 = system1.GetContainer(ComponentName="Results")
+results1.Edit()
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+system2.Delete()
+Save(Overwrite=True)
+Save(Overwrite=True)
+model1.Exit()
+model1.Edit()
+system4 = system1.Duplicate(RelativeTo=system1)
+model1.Exit()
+system1.DisplayText = "Bolted Nozzle Flange"
+system1.DisplayText = "Bolted Nozzle Flange 1"
+system4.DisplayText = "Bolted Nozzle Flange 2"
+model1.Edit()
+Save(Overwrite=True)
+model1.Exit()
+model2 = system4.GetContainer(ComponentName="Model")
+model2.Edit()
+model1.Edit()
+Save(Overwrite=True)
+model2.Exit()
+Save(Overwrite=True)
+Save(Overwrite=True)
+model1.Exit()
+Save(Overwrite=True)
