@@ -1,4 +1,5 @@
-﻿dp0/global/MECH/SYS-1.engd
+﻿dp0/global/MECH/SYS/Figures and Images/StaticFigure45.png
+dp0/global/MECH/SYS-1.engd
 dp0/global/MECH/SYS-1.mechdb
 dp0/global/MECH/SYS.engd
 dp0/global/MECH/SYS.mechdb
@@ -37,6 +38,7 @@ session_files/journal4.wbjn
 session_files/journal5.wbjn
 session_files/journal6.wbjn
 session_files/journal7.wbjn
+session_files/journal8.wbjn
 dp0/
 session_files/
 dp0/global/
@@ -45,6 +47,7 @@ dp0/SYS-1/
 dp0/global/MECH/
 dp0/global/MECH/SYS/
 dp0/global/MECH/SYS-1/
+dp0/global/MECH/SYS/Figures and Images/
 dp0/SYS/DM/
 dp0/SYS/ENGD/
 dp0/SYS/MECH/

@@ -1,0 +1,18 @@
+﻿# encoding: utf-8
+# Release 18.2
+SetScriptVersion(Version="18.2.109")
+system1 = GetSystem(Name="SYS")
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+Save(Overwrite=True)
+model1.Exit()
+model1.Edit()
+model1.Exit()
+model1.Edit()
+Save(Overwrite=True)
+model1.Exit()
+system2 = GetSystem(Name="SYS 1")
+model2 = system2.GetContainer(ComponentName="Model")
+model2.Edit()
+model2.Exit()
+Save(Overwrite=True)

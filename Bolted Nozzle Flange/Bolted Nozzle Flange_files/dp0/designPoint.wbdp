@@ -59,13 +59,13 @@
       <Object Name="/Engineering Data/Material:300 Series Stainless Steel" Version="1.0">
         <class-type valType="String">Material</class-type>
         <object-name valType="String">300 Series Stainless Steel</object-name>
-        <member-data valType="String">{"DisplayText": "300", "SourceFileReference": None}</member-data>
+        <member-data valType="String">{"DisplayText": "300", "SourceFileReference": $$0ac697de-f871-4fec-a487-73c0596ec069}</member-data>
         <properties-setByUserFlag-data valType="String">["DisplayName"]</properties-setByUserFlag-data>
       </Object>
       <Object Name="/Engineering Data/Material:A - 286 Steel" Version="1.0">
         <class-type valType="String">Material</class-type>
         <object-name valType="String">A - 286 Steel</object-name>
-        <member-data valType="String">{"DisplayText": "300 Series Stainless Steel 2", "SourceFileReference": None}</member-data>
+        <member-data valType="String">{"DisplayText": "300 Series Stainless Steel 2", "SourceFileReference": $$0ac697de-f871-4fec-a487-73c0596ec069}</member-data>
         <properties-setByUserFlag-data valType="String">["DisplayName"]</properties-setByUserFlag-data>
       </Object>
       <Object Name="/Engineering Data/MaterialProperty:Compressive Ultimate Strength" Version="2.0">
@@ -584,7 +584,7 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">20581</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 23900, "Input": 14234, "Output": 14234}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 24571, "Input": 14234, "Output": 14234}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <unique-system-dir valType="String">SYS</unique-system-dir>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
@@ -605,7 +605,7 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">22134</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 23092, "Input": 22131, "Output": 22131}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 24564, "Input": 22131, "Output": 22131}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "Scopes": 0, "Engineering Data": 22060, "Geometry": 20581, "Model": 22070, "Setup": 17287, "Solution": 17288, "Results": 17289, "Geometry 1": 20727}</last-update-regen-times>
       <unique-system-dir valType="String">SYS</unique-system-dir>
@@ -905,12 +905,12 @@
       <Object Name="/Engineering Data 1/Material:300 Series Stainless Steel" Version="1.0">
         <class-type valType="String">Material</class-type>
         <object-name valType="String">300 Series Stainless Steel</object-name>
-        <member-data valType="String">{"DisplayText": "300 Series Stainless Steel", "SourceFileReference": None}</member-data>
+        <member-data valType="String">{"DisplayText": "300 Series Stainless Steel", "SourceFileReference": $$c028f241-d98c-45b0-8a38-63bb2c5a6137}</member-data>
       </Object>
       <Object Name="/Engineering Data 1/Material:A - 286 Steel" Version="1.0">
         <class-type valType="String">Material</class-type>
         <object-name valType="String">A - 286 Steel</object-name>
-        <member-data valType="String">{"DisplayText": "A - 286 Steel", "SourceFileReference": None}</member-data>
+        <member-data valType="String">{"DisplayText": "A - 286 Steel", "SourceFileReference": $$c028f241-d98c-45b0-8a38-63bb2c5a6137}</member-data>
       </Object>
       <Object Name="/Engineering Data 1/MaterialProperty:Compressive Ultimate Strength" Version="2.0">
         <class-type valType="String">MaterialProperty</class-type>
@@ -1433,7 +1433,7 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">22910</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 23902, "Input": 22848, "Output": 22848}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 24573, "Input": 22848, "Output": 22848}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "Scopes": 0, "Engineering Data": 22060, "Geometry": 20581, "Model": 22134, "Setup": 22248, "Solution": 22249, "Results": 22262, "Engineering Data 1": 22833, "Geometry 1": 0}</last-update-regen-times>
       <unique-system-dir valType="String">SYS-1</unique-system-dir>
@@ -1446,7 +1446,7 @@
       <Object Name="/Geometry 1/TransferData:Geometry" Version="1.0">
         <class-type valType="String">TransferData</class-type>
         <object-name valType="String">Geometry</object-name>
-        <member-data valType="String">{"DisplayText": "Geometry", "ConnectionKeys": ["69071a22-ff9e-4530-88b8-d9c7bf612bfd"], "Data": None}</member-data>
+        <member-data valType="String">{"DisplayText": "Geometry", "ConnectionKeys": ["69071a22-ff9e-4530-88b8-d9c7bf612bfd"], "Data": $$f9ba86cc-ff5f-4e84-b979-d1cf0e5c2545}</member-data>
       </Object>
     </Container>
     <Container Name="Model 1" Version="1.0">
